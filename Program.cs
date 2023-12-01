@@ -17,12 +17,12 @@ internal class Program
             .AddJsonFile("appsettings.json", true, true)
             .Build();
 
-        string Key = cfg[nameof(Key)];
-        string Endpoint = cfg[nameof(Endpoint)];
-        string Model = cfg[nameof(Model)];
+        string key = cfg[nameof(key)];
+        string endpoint = cfg[nameof(endpoint)];
+        string model = cfg[nameof(model)];
 
         SemanticKernel = Kernel.Builder
-        .WithAzureOpenAIChatCompletionService(Model, Endpoint, Key)
+        .WithAzureOpenAIChatCompletionService(model, endpoint, key)
         .Build();
 
         SemanticKernel.ImportFunctions(new MathPlugin(), nameof(MathPlugin));
