@@ -1,6 +1,8 @@
 ﻿global using Microsoft.Extensions.Configuration;
 global using Microsoft.SemanticKernel;
 global using System.ComponentModel;
+global using System.Net.Http;
+global using System.Text.RegularExpressions;
 using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.Planners;
 using Microsoft.SemanticKernel.Planning;
