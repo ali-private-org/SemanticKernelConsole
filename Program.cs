@@ -31,8 +31,8 @@ internal class Program
         SemanticKernel.ImportFunctions(new WeatherPlugin(), nameof(WeatherPlugin));
 
         Console.WriteLine(await ExecutePlannerAsync("If my investment of 2130.23 dollars increased by 23%, how much would I have after I spent $5 on a latte?"));
-        Console.WriteLine(await ExecutePlannerAsync("\nHow is weather in Copenhagen?"));
-        Console.WriteLine(await ExecutePlannerAsync("\nHow is weather in Riyadh?"));
+        Console.WriteLine(await ExecutePlannerAsync("\n\nHow is weather in Copenhagen?"));
+        Console.WriteLine(await ExecutePlannerAsync("\n\nHow is weather in Riyadh?"));
     }
 
     private static async Task<string> ExecutePlannerAsync(string ask)
